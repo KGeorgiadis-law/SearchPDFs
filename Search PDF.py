@@ -54,7 +54,7 @@ def searchPDF(filename, key):
         txtObj = open(os.path.join('Index', page), "r", encoding='utf8')#open each txt page
         text = txtObj.read()
         text = re.sub(r"\s{2,}", " ", text)
-        if key in text:
+        if key in text: #this is very ugly and probably very inefficient. Will have to find a way to make it better - regex, probably
             keyIndexes = [m.start() for m in re.finditer(key, text)] #find iterations of key in the text
             for index in keyIndexes:
                 punctuationSigns = ['.', '?', '!']
@@ -138,4 +138,3 @@ while True: #Step 1: Take word or phrase from user
                     noOfResults += 1
     total_time = round(time.time() - begin_time, 4)
     print("\n\nSearch finished. %s sentences containing '%s' have been found. The search has taken %s seconds overall (including indexing)." % (noOfResults, key, total_time))
-    #TODO: provide an option to save the results in a text file.

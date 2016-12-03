@@ -3,7 +3,7 @@
 # phrase and return all sentences containing that word of phrase.
 
 # Started development 01/12/2016 by Konstantinos Georgiadis after lengthy discussion
-# with Polis Georgiou @ Dublin, in a pub.
+# with P.G. @ Dublin, in a pub.
 
 # Running commentary on 02/12/2016: the first results have been very encouraging
 # with time to search reduced x100 in the second instance.

@@ -1,4 +1,4 @@
-#!Py 3.5.2
+#!Py 3.5.1
 # Search PDF. A script designed to search a folder of PDF files for a word or
 # phrase and return all sentences containing that word of phrase.
 
